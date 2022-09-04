@@ -12,7 +12,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'eslint-config-prettier',
-    'standard'
+    'standard',
+    'plugin:storybook/recommended'
   ],
   overrides: [],
   parserOptions: {
