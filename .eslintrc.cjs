@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     semi: [2, 'always'],
+    'no-unused-vars': 'warn',
     'space-before-function-paren': [
       'error',
       {
