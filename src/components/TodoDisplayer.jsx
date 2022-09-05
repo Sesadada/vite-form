@@ -7,7 +7,7 @@ const TodoDisplayer = () => {
 
   console.log(todoList);
   return (
-    <div className='bg-blue-200 w-2/3 mt-8 lg:mt-12 shadow-md rounded-md flex flex-col  p-2'>
+    <div className='bg-blue-200  h-96 w-2/3 mt-8 lg:mt-12 shadow-md rounded-md flex flex-col p-2 overflow-scroll'>
       {todoList.length > 0 &&
         todoList.map((todo, i) => <TodoItem key={i} item={todo} />)}
     </div>
