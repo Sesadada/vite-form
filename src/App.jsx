@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Nav from './components/Nav';
 import TodoDisplayer from './components/TodoDisplayer';
 import TodoItemCreator from './components/TodoItemCreator';
