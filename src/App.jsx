@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Nav from './components/Nav';
+import TodoDisplayer from './components/TodoDisplayer';
+import TodoItemCreator from './components/TodoItemCreator';
 import { Button } from './stories/Button';
 import { Header } from './stories/Header';
 
@@ -14,13 +16,13 @@ function App() {
   };
 
   return (
-    <div className='bg-yellow-200'>
+    <div className='bg-yellow-200 h-screen'>
       <Nav />
-      <Header user={current} onLogout={onLogout} onLogin={onLogin} />
-      <h1>HELLO</h1>
-      <Button primary={false} backgroundColor='pink' label='Sign In'>
-        Sign In
-      </Button>
+
+      <section className='flex flex-col lg:flex-row justify-center items-center lg:gap-8 lg:px-8 lg:items-start'>
+        <TodoItemCreator />
+        <TodoDisplayer />
+      </section>
     </div>
   );
 }
